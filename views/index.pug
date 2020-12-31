@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}, fun for the whole family!
+  form(method="get" action="/game")
+    label(for="player1") Player #1 
+    input(type="text" id="player1" name="player1")
+    br
+    label(for="player2") Player #2 
+    input(type="text" id="player2" name="player2")
+    br
+    label(for="player3") Player #3 
+    input(type="text" id="player3" name="player3")
+    br
+    label(for="player4") Player #4 
+    input(type="text" id="player4" name="player4")
+    br
+    button(type="submit") Start a game
+
+  img(src="http://localhost:3000/images/pig.jpg", width="300")
+

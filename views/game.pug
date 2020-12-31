@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p This is the game display
+  p #{players[0].name}: #{players[0].score}
+  p #{players[1].name}: #{players[1].score}
+
+  h2 It is #{nextTurn}'s turn.
+  img(src="http://localhost:3000/images/pig.jpg", width="200")
+  img(src="http://localhost:3000/images/pig.jpg", width="200")
